@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mapovlay"
+    android:weightSum="1">
+
+
+    <com.amap.api.maps2d.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.73"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+    <com.example.paohi.main_musicchoose
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mmco"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="0dp"
+        android:background="@drawable/locationdefault"
+        android:layout_marginBottom="87dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/remaind"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/remain"
+        android:padding="0dp"
+        android:layout_alignTop="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:padding="0dp"
+        android:layout_height="54dp"
+        android:background="@drawable/startbutton"
+        android:text="开始"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/back"
+        android:layout_centerHorizontal="true" />
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:id="@+id/mainsetrecord"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/set"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:text="个人设置"-->
+            <!--android:textColor="#fffffd"-->
+            <!--android:background="#2F4F4F"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/record"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:textColor="#fffffd"-->
+            <!--android:text="跑步记录"-->
+            <!--android:background="#2F4F4F"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+<com.example.paohi.mainsetrecordbt
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainsetrecord"
+    android:layout_below="@+id/back"
+    android:layout_alignParentBottom="true"
+   />
+    <com.example.paohi.hongludeng
+        android:id="@+id/gpssign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mmco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>

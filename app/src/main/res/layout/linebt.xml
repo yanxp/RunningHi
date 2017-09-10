@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:id="@+id/linebt"
+    android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#2F4F4F"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/stop2"
+                android:background="@drawable/runbutton"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="#2F4F4F">
+            <Button
+                android:id="@+id/over"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/overbutton"/>
+        </LinearLayout>
+    </LinearLayout>
+

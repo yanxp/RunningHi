@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/undermap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/runrecord">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/deletebutton" />
+
+            <Button
+                android:id="@+id/completedata"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/data"
+                android:layout_alignBottom="@+id/data"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/databutton" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@+id/delete"
+
+                android:text="跑步记录"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="259dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/map">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <com.amap.api.maps2d.MapView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.73"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="103dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="103dp"
+                android:orientation="vertical"
+                android:background="@drawable/runrecord"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/dis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="路径"
+                            android:textColor="#8e9aab"/>
+
+                        <TextView
+                            android:id="@+id/Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="100dp"
+                            android:textColor="#8e9aab"
+                            android:text="时间" />
+
+                        <TextView
+                            android:id="@+id/average_match"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#8e9aab"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="180dp"
+                            android:text="平均配速" />
+
+                        <TextView
+                            android:id="@+id/Cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#8e9aab"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="285dp"
+                            android:text="热量消耗" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/distance"
+                            android:textColor="#8e9aab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="2.28KM" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="00:20:56"
+                            android:textColor="#8e9aab"/>
+
+                        <TextView
+                            android:id="@+id/match"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#8e9aab"
+                            android:layout_marginLeft="180dp"
+                            android:text="74KM/H" />
+
+                        <TextView
+                            android:id="@+id/kal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="285dp"
+                            android:text="105Cal"
+                            android:textColor="#8e9aab"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/PB1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="PB 6.33Km"
+                            android:textColor="#8e9aab"/>
+
+                        <TextView
+                            android:id="@+id/PB2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="PB 00:50:21"
+                            android:textColor="#8e9aab"/>
+
+                        <TextView
+                            android:id="@+id/PB3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="180dp"
+                            android:text="PB 4.69KM/H"
+                            android:textColor="#8e9aab"/>
+
+                        <TextView
+                            android:id="@+id/PB4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="285dp"
+                            android:text="PB:23Cal"
+                            android:textColor="#8e9aab"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <EditText
+                    android:id="@+id/feeling"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:hint="输入你本次运动的感受吧"
+                    android:ems="10" />
+
+                <Button
+                    android:id="@+id/pen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@+id/feeling"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/penbutton" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sharedefault">
+            <Button
+                android:id="@+id/share"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#fffffd"
+                android:textSize="18dp"
+                android:text="分享"
+                android:background="#2F4F4F"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/saverecorddefault">
+            <Button
+                android:id="@+id/save"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="保存记录"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fffffd"
+                android:background="#2F4F4F"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

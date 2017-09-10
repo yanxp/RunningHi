@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mapovlay">
+    <com.amap.api.maps2d.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:background="@drawable/musicunder"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/playbutton"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/stop"
+                    android:layout_marginRight="8dp"/>
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/nextbutton"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/next"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="已选择歌曲/未选择歌曲"
+                    android:textColor="#a3acbc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/yinyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="音乐"
+                    android:textColor="#a3acbc" />
+            </RelativeLayout>
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:background="@drawable/dataunder"-->
+
+                <!--android:layout_margi-->
+                <!--android:nTop="12dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_below="@+id/relative"-->
+                <!--android:id="@+id/relative2"-->
+                <!--android:gravity="center">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!-->-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="总路程" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="2.7km"-->
+                    <!--android:textColor="#ffffff"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginLeft="105dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:text="总时间" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="25min" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginLeft="210dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="总消耗" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="35dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="123CAL" />-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+                    <!--android:layout_width="180dp"-->
+                    <!--android:layout_height="28dp"-->
+                    <!--android:background="@drawable/gps"-->
+                    <!--android:layout_below="@+id/relative2"-->
+                    <!--android:layout_marginLeft="90dp"-->
+                    <!--android:layout_marginRight="80dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:id="@+id/relativeLayout2">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="GPS"-->
+                        <!--android:textColor="#a3acbc"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:layout_marginLeft="7dp"/>-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="15dp"-->
+                        <!--android:layout_height="15dp"-->
+                        <!--android:src="@drawable/red"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_marginLeft="60dp"/>I-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="15dp"-->
+                        <!--android:layout_height="15dp"-->
+                        <!--android:src="@drawable/yellow"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_marginLeft="100dp"/>I-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="15dp"-->
+                        <!--android:layout_height="15dp"-->
+                        <!--android:src="@drawable/green"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_marginLeft="140dp"/>I-->
+                <!--</RelativeLayout>-->
+
+    <Button
+                        android:id="@+id/data"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_alignBottom="@+id/back"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/remain" />
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/locationdefault"
+                        android:layout_marginBottom="87dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/linebt"
+            android:layout_below="@+id/data"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#2F4F4F"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/stop2"
+                    android:background="@drawable/runbutton"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#2F4F4F">
+                <Button
+                    android:id="@+id/over"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/overbutton"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <com.example.paohi.rundatakongjian
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view4" />
+
+    <com.example.paohi.hongludeng
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view3"
+        android:layout_below="@+id/view4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/juxing" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="10sp"
+                android:src="@drawable/one" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="数据分析"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/juxing"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+          >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="周期：" 
+                android:textSize="20sp"/>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/date" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="71dp" >
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="268dp" >
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:id="@+id/imageView1"
+              />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:text="时间"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="14dp"
+                android:id="@+id/imageView2"
+                />
+
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/distance"
+                android:layout_below="@+id/imageView2"
+                android:text="个人最佳成績："
+                android:layout_marginTop="8dp"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dis"
+                android:layout_marginTop="14dp"
+                android:id="@+id/imageView4"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/grade"
+                android:layout_marginTop="16dp"
+                android:id="@+id/imageView3"
+                />
+            <TextView
+                android:id="@+id/dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/grade"
+                android:layout_below="@+id/imageView3"
+                android:text="个人最远距离："
+                android:layout_marginTop="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/longtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dis"
+                android:layout_below="@+id/imageView4"
+                android:text="个人最长时间："
+                android:layout_marginTop="8dp"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/longtime"
+                android:layout_marginTop="14dp"
+                android:id="@+id/imageView5"
+                />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/match"
+                android:layout_marginTop="14dp"
+                android:id="@+id/imageView6"
+                />
+         <TextView
+             android:id="@+id/match"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/longtime"
+             android:layout_below="@+id/imageView5"
+             android:text="个人最快配速："
+             android:layout_marginTop="8dp"
+              android:textSize="12sp"/>
+
+         <TextView
+             android:id="@+id/distance"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/imageView2"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="26dp"
+             android:text="路程"
+             android:layout_marginTop="5dp"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/consume"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/imageView2"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="36dp"
+             android:text="消耗"
+             android:layout_marginTop="5dp"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/five"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:layout_alignLeft="@+id/match"
+             android:layout_below="@+id/imageView6"
+             android:text="五公里最快时间：" />
+
+         <TextView
+             android:id="@+id/KM"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/consume"
+             android:layout_alignTop="@+id/dis"
+             android:text="2.56KM" />
+
+         <TextView
+             android:id="@+id/textTime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/KM"
+             android:layout_below="@+id/imageView4"
+             android:text="00:45:26" />
+
+         <TextView
+             android:id="@+id/matchsu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textTime"
+             android:layout_alignTop="@+id/match"
+             android:text="5'01" />
+
+         <TextView
+             android:id="@+id/fastestTime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/five"
+             android:layout_alignBottom="@+id/five"
+             android:layout_alignLeft="@+id/matchsu"
+             android:text="00:40:02" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

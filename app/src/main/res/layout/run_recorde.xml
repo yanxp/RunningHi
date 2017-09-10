@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/juxing" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="10sp"
+                android:src="@drawable/one" />
+
+            <Button
+                android:id="@+id/completedata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/data"
+                android:layout_alignBottom="@+id/data"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="详细数据" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="130dp"
+                android:text="跑步记录"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#000"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="77dp">
+               <RelativeLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="历史跑步记录"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+               </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:id="@+id/Totaldistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="16dp"
+                    android:text="总路程"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/KM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.94KM"
+                    android:textSize="20sp"
+                    android:layout_alignBottom="@+id/Totaldistance"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="83dp"
+                    android:layout_marginEnd="83dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="75dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalnum"
+                    android:text="总次数"
+                   android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/num"
+                    android:text="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totaltime"
+                    android:text="总时间"
+                    android:layout_alignTop="@+id/totalnum"
+                    android:layout_alignLeft="@+id/time"
+                    android:layout_alignStart="@+id/time" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:text="00:34:54"
+                    android:layout_alignTop="@+id/num"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalcal"
+                    android:text="总消耗"
+                    android:layout_alignTop="@+id/totaltime"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="44dp"
+                    android:layout_marginEnd="44dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cal"
+                    android:text="500Cal"
+                    android:layout_alignTop="@+id/time"
+                    android:layout_alignRight="@+id/totalcal"
+                    android:layout_alignEnd="@+id/totalcal" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/left"
+                    android:src="@drawable/left"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7月"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2日"
+                    android:textSize="20sp"
+                    android:id="@+id/textView"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_marginRight="40dp"
+                    android:layout_toLeftOf="@+id/right"
+                    android:layout_toStartOf="@+id/right" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/right"
+                    android:src="@drawable/right"
+                    android:layout_alignTop="@+id/left"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginEnd="64dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6号"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.1Km"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="15dp"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:26:28"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/right_one"
+                    android:src="@drawable/right"
+
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1号"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.1Km"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:26:28"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/right_two"
+                    android:src="@drawable/right"
+
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000"
+            />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+

@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion  22
+    buildToolsVersion "22.0.1"
+    signingConfigs {
+        mainkey {
+            keyAlias 'key'
+            // storeFile file('C:/Users/yxp/.AndroidStudio1.2/mainkey')
+            storeFile file('E:/paohi/mainkey')
+            storePassword '345678'
+            keyPassword 'neyighb2or'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.paohi"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.mainkey
+        }
+        debug {
+            signingConfig signingConfigs.mainkey
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/MapApiLocation_1.3.3.jar')
+    compile files('libs/Android_2DMapApi_V2.5.0.jar')
+    compile 'com.android.support:support-v4:22.2.1'
+}
